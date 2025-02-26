@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteMarioBros</title>
+    <link rel="stylesheet" href="mariobros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,900;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <img src="./logo.png" alt="logo-mario-bros">
+
+    <div class="conteudo">
+
+        <h1>Encanadores <span class="cor-nome-mario">Mario</span> & <span class="cor-nome-luigi">Luigi</span> !
+            <br>
+            Resolvendo Seus Problemas Com Estilo !
+        </h1>
+        <br>
+        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
+            ou
+            torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
+            vocês
+            os encanadores mais famosos do Reino dos Cogumelos - Mario & Luigi !</p>
+    </div>
+
+    <div class="bonecos">
+        <img class="mario-luigi" src="./mario.png" alt="foto-mario-luigi">
+    </div>
+
+    <button onclick="cliqueinobotao()" class="fale-conosco">Fale Conosco</button>
+
+    <div class="trailer">
+        <video src="./videomariobros.mp4.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <form class="formulários">
+        <legend>Fale Conosco</legend>
+        <input type="text" name="Nome" placeholder="Seu Nome">
+        <input type="tel" name="Telefone" placeholder="Seu Telefone">
+        <textarea name="duvida" placeholder="Digite Seu Problema Aqui"></textarea>
+        <button onclick="sumirformulario()">Enviar Formulário</button>
+    </form>
+
+    <div class="mascara-form"></div>
+
+</body>
+
+<script>
+
+    let Formulário = document.querySelector(".formulários")
+    console.log("caixa de formularios")
+    let mascara = document.querySelector(".mascara-form")
+
+    function cliqueinobotao() {
+        Formulário.style.left = "550px"
+        mascara.style.visibility = "visible"
+    }
+
+    function sumirformulario() {
+        Formulário.style.left = "320px"
+    }
+
+</script>
+
+</html>

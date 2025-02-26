@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee</title>
+    <link rel="stylesheet" href="starbucks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,900;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <img src="./logo Starbucks.png" alt="Logo-Starbucks" class="logo-star">
+
+    <div class="conteudo">
+
+        <div>
+            <h1>It's not just Coffee</h1>
+            <h2>It's <span class="textostarbucks"> Starbucks</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia praesentium voluptatibus corrupti
+                animi
+                non, id ex recusandae nostrum fugiat iure molestias corporis, eaque aliquam perferendis ullam laborum
+                voluptate eligendi voluptas!</p>
+            <button class="button-like">Deixe o seu like</button>
+        </div>
+
+        <div class="caixa-copo-grande">
+            <img src="./copo verde grande.png" class="copo-verde-grande">
+        </div>
+
+    </div>
+
+    <div class="caixa-copinhos">
+        <img src="./copo laranja pequeno.png" class="copinhos"
+            onclick="trocaimagem('./copo laranja grande.png'); trocacor('#e7ad0d')">
+
+        <img src="./copo rosa pequeno.png" class="copinhos"
+            onclick="trocaimagem('./copo rosa grande.png'); trocacor('#e70db1')">
+
+        <img src="./copo verde pequeno.png" class="copinhos"
+            onclick="trocaimagem('./copo verde grande.png'); trocacor('#0a8d0a')">
+    </div>
+
+    <script>
+        let imagem = document.querySelector(".copo-verde-grande")
+        let circulo = document.querySelector(".circulo")
+        let starbucks = document.querySelector(".textostarbucks")
+        let button = document.querySelector(".button-like")
+
+        function trocaimagem(endereco) {
+            imagem.src = endereco;
+        }
+
+        function trocacor(cor) {
+            circulo.style.background = cor;
+            button.style.background = cor;
+            starbucks.style.color = cor;
+            console.log
+        }
+
+    </script>
+
+</body>
+
+</html>

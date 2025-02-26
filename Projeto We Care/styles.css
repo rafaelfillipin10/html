@@ -1,0 +1,142 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 44px 0 115px 66px;
+}
+
+button {
+    width: 130px;
+    height: 41px;
+    border-radius: 50px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.link-header {
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    cursor: pointer;
+    margin: 23px;
+}
+
+.logo-image {
+    width: 468px;
+    height: 400px;
+    margin-left: 125px;
+    display: inline-block;
+    margin-top: -35px;
+}
+
+h1 {
+    font-weight: 500px;
+    font-size: 80px;
+    line-height: 100px;
+    color: #515151;
+}
+
+h2 {
+    font-weight: 100px;
+    font-size: 60px;
+    line-height: 100px;
+    color: #515151;
+}
+
+p {
+    font-weight: 600px;
+    font-size: 20px;
+    line-height: 35px;
+    color: #848484;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-main {
+    background: #ADFF00;
+    color: black;
+    border-radius: 40px;
+    width: 220px;
+    height: 64px;
+    font-size: 35px;
+    font-weight: 700px;
+    line-height: 54px;
+    cursor: pointer;
+    filter: drop-shadow (0px 4px 4px 0px #00000040);
+}
+
+div {
+    display: inline-block;
+    margin-left: 750px;
+    margin-top: -10000px;
+}
+
+.button-main {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+
+      width: 110%
+        
+       
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 40px;
+        align-items: center;
+
+
+
+
+    }
+
+    .logo-image {
+        display: block;
+        width: 280px;
+        height: 220px;
+        margin: auto;
+        
+
+    }
+
+    div {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    p {
+        margin: auto;
+        width: 70%
+        
+
+        
+
+    }
+
+
+
+}

@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 300px;
+    margin-left: 90px;
+}
+
+h1 {
+    width: 470px;
+    color: white;
+}
+
+.cor-nome-mario {
+    color: red;
+}
+
+.cor-nome-luigi {
+    color: green;
+}
+
+p {
+    width: 400px;
+    color: white;
+}
+
+.conteudo {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.bonecos {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -490px;
+    margin-right: 50px;
+}
+
+.mario-luigi {
+    width: 450px;
+}
+
+.fale-conosco {
+    background: green;
+    color: red;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -100px;
+}
+
+.trailer {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+}
+
+.mascara {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(109deg, rgba(52, 54, 58, 0.99) 1%, rgba(58, 58, 59, 0.7) 50%, rgba(50, 50, 51, 0.99) 100%);
+}
+
+.formulários {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    margin-top: -348px;
+    left: -280px;
+    position: fixed;
+    z-index: 4;
+    transition: left 1s linear;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid gray;
+    outline-color: red
+}
+
+legend {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 3px;
+    outline-color: green;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+}
