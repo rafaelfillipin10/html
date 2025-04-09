@@ -32,7 +32,26 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
+}
+
+function changeCurrency() {
+    const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".currency-img")
 
 
+    if (currencySelect.value == "dolar")
+        currencyName.innerHTML = "Dolar americano"
+    currencyImage.src = "./assets/Simbolo USA.jpeg"
 
+    if (currencySelect.value == "euro")
+        currencyName.innerHTML = "Euro"
+    currencyImage.src = "./assets/Simbolo Euro.jpeg"
+
+    convertValues()
+
+}
+
+
+currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
+
