@@ -39,13 +39,13 @@ function changeCurrency() {
     const currencyImage = document.querySelector(".currency-img")
 
 
-    if (currencySelect.value == "dolar")
+    if (currencySelect.value == "dolar"){
         currencyName.innerHTML = "Dolar americano"
-    currencyImage.src = "./assets/Simbolo USA.jpeg"
+    currencyImage.src = "./assets/Simbolo USA.jpeg"}
 
-    if (currencySelect.value == "euro")
+    if (currencySelect.value == "euro"){
         currencyName.innerHTML = "Euro"
-    currencyImage.src = "./assets/Simbolo Euro.jpeg"
+    currencyImage.src = "./assets/Simbolo Euro.jpeg"}
 
     convertValues()
 
