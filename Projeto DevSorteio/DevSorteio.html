@@ -13,40 +13,45 @@
     <link rel="stylesheet" href="DevSorteio.css">
 
 
-</head>    
+</head>
 
 <body>
 
-    <img src="./assets/Dado Vermelho.png" alt="DadoVermelho"/>
-    
+    <img class=".imagem-responsiva" src="./DadoVermelho.png" alt="DadoVermelho">
+
+    <br>
     <br>
 
     <h1>
-        DevSorteio
+        Sortear um número
     </h1>
 
     <br>
     <br>
+    <br>
 
-    <h2>
-        Sortear um número 
-    </h2>
+    <input class="result-number" type="text" placeholder="result" disabled>
+
+    <input class="input-min" placeholder="entre" type="number">
+
+    <input class="input-max" placeholder="e" type="number">
 
     <br>
     <br>
+    <br>
+    <br>
 
-    <input  placeholder="entre">
-
-    <input placeholder="e">
-
-    <button> Sortear </button>
+    <button onclick="generateNumber()" class="border-btn"> Sortear </button>
 
 
-
-
+    <video src="./video-dados.mp4.mp4" autoplay muted loop></video>
 
 
 
 </body>
+
+<script src="DevSorteio.js"></script>
+
+
 
 </html>

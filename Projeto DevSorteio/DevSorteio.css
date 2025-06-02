@@ -4,11 +4,130 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    
+
 }
 
-img{
+img {
+
+    width: 900px;
+    background: black;
+    margin-left: 850px;
+    margin-top: 20px;
+    border-radius: 50px;
+
+
+}
+
+body {
+
+    background: grey;
+}
+
+h1 {
+
+    margin-top: -120px;
+    margin-left: 950px;
+    font-size: 80px;
+    color: red
+}
+
+.result-number {
+
+    border-radius: 20px;
+    margin-left: 1100px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    width: 400px;
+    text-align: center;
+    height: 85px;
+    background: rgb(142, 209, 40);
+    font-weight: bold;
+    color: black;
+    border-color: black;
+
+}
+
+.input-min {
+
+    border-radius: 20px;
+    margin-left: 850px;
+    font-size: 50px;
+    width: 400px;
+    text-align: center;
+    height: 85px;
+    font-weight: bold;
+
+}
+
+.input-max {
+
+    border-radius: 20px;
+    margin-left: 101px;
+    font-size: 50px;
+    width: 400px;
+    text-align: center;
+    height: 85px;
+    font-weight: bold;
+}
+
+button {
+
+    margin-top: -30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: blueviolet;
+    margin-left: 1175px;
+    font-size: 50px;
+    width: 250px;
+    height: 110px;
+    font-weight: 700
+}
+
+.border-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: none;
+    transition: all 0.5s;
+    z-index: -1;
+
+}
+
+.border-btn:hover {
+
+    color: white;
+
+}
+
+.border-btn:hover::before {
 
     width: 100%;
+}
+
+video {
+
+    opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0%;
+    left: 0%;
+
+}
+
+@media screen and (max-widht: 1760px) {
+
+    button {
+
+        color: blue;
+
+    }  
+
 
 }
